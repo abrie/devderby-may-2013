@@ -69,6 +69,34 @@ canvas {
     border: 5px solid rgb(100,100,100);
 }
 
+#hud_left {
+top:7px;
+left:0px;
+position: absolute;
+width: 495px;
+height: 375px;
+z-index: 99;
+font-size: 50px;
+line-height: 200px;
+font-family: Tahoma, sans-serif;
+color: #fff9d6;
+text-align: center;
+}
+
+#hud_right {
+position: absolute;
+top:7px;
+left:496px;
+width: 495px;
+height: 375px;
+z-index: 99;
+font-size: 50px;
+line-height: 200px;
+text-align: center;
+font-family: Tahoma, sans-serif;
+color: #fff9d6;
+}
+
 #hud {
     position: absolute;
     top:7px;
@@ -95,6 +123,8 @@ canvas {
 <body>
     <div id="game">
         <div id="hud">...</div>
+        <div id="hud_left"></div>
+        <div id="hud_right"></div>
         <div class="canvasContainer">
             <canvas id="2space" width=480 height=360></canvas>
             <div class="overlay"></div>
