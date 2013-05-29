@@ -1,1 +1,118 @@
-DevDerby May 2013 Entry
+<!DOCTYPE html>
+<html>
+<head>
+<script>DEBUG=false;</script>
+<script data-main="application-built.js" src="require.js"></script>
+
+<style>
+html {
+    background: white;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#game {
+    position:relative;
+    width:980px;
+    height:370px;
+    border:5px solid block;
+    border-radius:10px;
+    padding: 10px;
+    padding-top: 12px;
+    margin-top: 10px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    background: black;
+}
+
+canvas {
+    border: 1px solid black;
+    width:480px;
+    height:360px;
+}
+
+#editor {
+    display:none;
+}
+
+#subsystem {
+    display:none;
+}
+
+#virtualCamera {
+    display: none;
+}
+
+#augmentedCamera {
+    display: none;
+}
+
+.canvasContainer {
+    position:relative;
+    display: inline;
+    padding: 3px;
+}
+
+.overlay {
+    position: absolute;
+    top:-349px;
+    left:-1px;
+    width: 469px;
+    height: 349px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 5px solid rgb(100,100,100);
+}
+
+#hud {
+    position: absolute;
+    top:7px;
+    left:0px;
+    width: 990px;
+    height: 375px;
+    z-index: 100;
+    font-family: Tahoma, sans-serif;
+    line-height: 375px;
+    color: #fff9d6;
+    font-weight:bold;
+    font-size: 134px;
+    text-align: center;
+}
+
+.floating {
+    float: left;
+}
+
+</style>
+
+</head>
+<body>
+    <div id="game">
+        <div id="hud">loading...</div>
+        <div class="canvasContainer">
+            <canvas id="2space" width=480 height=360></canvas>
+            <div class="overlay"></div>
+        </div>
+        <div class="canvasContainer">
+            <canvas id="camera" width=480 height=360></canvas>
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div id="editor">
+        <select name="mode" id="mode"></select>
+        <input type="checkbox" id="pause">pause</input>
+        <button id="reload">reload</button>
+        <button id="serialize">serialize</button>
+        <button id="clear">clear</button>
+        <button id="next">next</button>
+        <button id="previous">previous</button>
+        <input type="text" id="objective"></input>
+    </div>
+    <div id="subsystem"></div>
+</body>
+</html>
