@@ -30,6 +30,13 @@ body {
     background: black;
 }
 
+#footnotes {
+    width:980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
 canvas {
     border: 1px solid black;
     width:480px;
@@ -42,14 +49,6 @@ canvas {
 
 #subsystem {
     display:none;
-}
-
-#virtualCamera {
-    display: none;
-}
-
-#augmentedCamera {
-    display: none;
 }
 
 .canvasContainer {
@@ -69,32 +68,25 @@ canvas {
     border: 5px solid rgb(100,100,100);
 }
 
-#hud_left {
-top:7px;
-left:0px;
-position: absolute;
-width: 495px;
-height: 375px;
-z-index: 99;
-font-size: 50px;
-line-height: 200px;
-font-family: Tahoma, sans-serif;
-color: #fff9d6;
-text-align: center;
+.hud_pane {
+    position: absolute;
+    top:7px;
+    width: 495px;
+    height: 375px;
+    z-index: 99;
+    font-size: 50px;
+    line-height: 200px;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    color: #fff9d6;
 }
 
 #hud_right {
-position: absolute;
-top:7px;
-left:496px;
-width: 495px;
-height: 375px;
-z-index: 99;
-font-size: 50px;
-line-height: 200px;
-text-align: center;
-font-family: Tahoma, sans-serif;
-color: #fff9d6;
+    left:496px;
+}
+
+#hud_left {
+    left:0px;
 }
 
 #hud {
@@ -113,18 +105,14 @@ color: #fff9d6;
     background: black;
 }
 
-.floating {
-    float: left;
-}
-
 </style>
 
 </head>
 <body>
     <div id="game">
         <div id="hud">...</div>
-        <div id="hud_left"></div>
-        <div id="hud_right"></div>
+        <div id="hud_left" class="hud_pane"></div>
+        <div id="hud_right" class="hud_pane"></div>
         <div class="canvasContainer">
             <canvas id="2space" width=480 height=360></canvas>
             <div class="overlay"></div>
@@ -133,6 +121,9 @@ color: #fff9d6;
             <canvas id="camera" width=480 height=360></canvas>
             <div class="overlay"></div>
         </div>
+    </div>
+    <div id="footnotes">
+        this game requires <a href="markers.pdf">printed AR markers</a>
     </div>
     <div id="editor">
         <select name="mode" id="mode"></select>
