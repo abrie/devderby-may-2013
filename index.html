@@ -105,12 +105,17 @@ canvas {
     background: black;
 }
 
+.footnote {
+    display:inline;
+    margin-right:20px;
+    margin-left:20px;
+}
 </style>
 
 </head>
 <body>
     <div id="game">
-        <div id="hud">...</div>
+        <div id="hud">init'ing</div>
         <div id="hud_left" class="hud_pane"></div>
         <div id="hud_right" class="hud_pane"></div>
         <div class="canvasContainer">
@@ -123,7 +128,19 @@ canvas {
         </div>
     </div>
     <div id="footnotes">
-        this game requires <a href="markers.pdf">printed AR markers</a>
+        <div class="footnote">
+            this game requires <a href="markers.pdf">printed AR markers</a>
+        </div>
+        <div class="footnote">
+            indicate your ambient light level: <select name="threshold" id="threshold"></select>
+        </div>
+        <div class="footnote">
+            contact author: abrhie.gmail
+        </div>
+        <div class="footnote">
+            <a href="https://bitbucket.org/abrie/devderby-may-2013/">source code</a> /
+            <a href="http://www.youtube.com/watch?v=Pa_EwQ0DoWk">video</a>
+        </div>
     </div>
     <div id="editor">
         <select name="mode" id="mode"></select>
@@ -137,4 +154,14 @@ canvas {
     </div>
     <div id="subsystem"></div>
 </body>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-41282266-2', 'abrie.github.io');
+ga('send', 'pageview');
+
+</script>
 </html>
