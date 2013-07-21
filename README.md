@@ -1,5 +1,5 @@
-An AR Game: Mozilla Dev Derby May 2013.
-=================
+#Mozilla Dev Derby May 2013
+###An AR Game
 
 There are two rules: capture the pieces before they fall on the ground; and capture them in the specified order. If you succeed you'll move onto the next level. If you fail... well, then try again.
 
@@ -7,15 +7,13 @@ This game uses AR markers to control wormholes; which are portals between a 2D a
 
 Please note that a well-lit play area is required. Increasing your display's brightness is a good way to provide illumination; since it casts light onto the markers.
 
-Links
------
-(Mozilla Entry Page)[https://developer.mozilla.org/en/demos/detail/an-ar-game]
-(Sourcecode)[https://bitbucket.org/abrie/devderby-may-2013]
-(Playable Version)[http://abrie.github.io/devderby-may-2013]
+###Links
+* Mozilla Entry Page: https://developer.mozilla.org/en/demos/detail/an-ar-game
+* Source: https://bitbucket.org/abrie/devderby-may-2013
+* Playable Version: http://abrie.github.io/devderby-may-2013
 
-Technology
-----------
-(Three.js)[http://threejs.org]
-(Box2D.js)[https://github.com/kripken/box2d.js/]
-(CreateJS)[(http://www.createjs.com/]
-(JSARToolkit)[https://github.com/kig/JSARToolKit]
+###Technology
+* Three.js http://threejs.org
+* Box2D.js https://github.com/kripken/box2d.js/
+* CreateJS http://www.createjs.com/
+* JSARToolkit https://github.com/kig/JSARToolKit
