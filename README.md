@@ -10,6 +10,7 @@ Please note that a well-lit play area is required. Increasing your display's bri
 ###Links
 * Mozilla Entry Page: https://developer.mozilla.org/en/demos/detail/an-ar-game
 * Source: https://bitbucket.org/abrie/devderby-may-2013
+* Video: http://www.youtube.com/watch?v=Pa_EwQ0DoWk
 * Playable Version: http://abrie.github.io/devderby-may-2013
 
 ###Technology
